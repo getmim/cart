@@ -51,6 +51,17 @@ return [
                 ],
                 'index' => 5000
             ],
+            'total' => [
+                'comment' => 'final price to pay',
+                'type' => 'DOUBLE',
+                'length' => '13,2',
+                'attrs' => [
+                    'unsigned' => true,
+                    'null' => false,
+                    'default' => 0
+                ],
+                'index' => 6000
+            ],
             'status' => [
                 'comment' => '0 canceled, 1 active, 2 paid',
                 'type' => 'TINYINT',
@@ -59,7 +70,7 @@ return [
                     'null' => FALSE,
                     'default' => 1
                 ],
-                'index' => 6000
+                'index' => 7000
             ],
             'updated' => [
                 'type' => 'TIMESTAMP',
@@ -114,6 +125,7 @@ return [
                 'index' => 4000
             ],
             'price' => [
+                'comment' => 'single product price',
                 'type' => 'DOUBLE',
                 'length' => '13,2',
                 'attrs' => [
@@ -123,6 +135,7 @@ return [
                 'index' => 5000
             ],
             'total' => [
+                'comment' => 'final price to pay',
                 'type' => 'DOUBLE',
                 'length' => '13,2',
                 'attrs' => [

@@ -60,6 +60,10 @@ return [
                     'type' => 'number',
                     'decimal' => 2
                 ],
+                'total' => [
+                    'type' => 'number',
+                    'decimal' => 2
+                ],
                 'status' => [
                     'type' => 'enum',
                     'enum' => 'cart.status'
