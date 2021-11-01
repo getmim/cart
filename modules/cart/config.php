@@ -2,7 +2,7 @@
 
 return [
     '__name' => 'cart',
-    '__version' => '0.0.3',
+    '__version' => '0.1.0',
     '__git' => 'git@github.com:getmim/cart.git',
     '__license' => 'MIT',
     '__author' => [
@@ -32,13 +32,17 @@ return [
             'Cart\\Model' => [
                 'type' => 'file',
                 'base' => 'modules/cart/model'
+            ],
+            'Cart\\Library' => [
+                'type' => 'file',
+                'base' => 'modules/cart/library'
             ]
         ],
         'files' => []
     ],
     'libEnum' => [
         'enums' => [
-            'cart.status' => ['Canceled', 'Active', 'Paid']
+            'cart.status' => ['Canceled','Active','Paid']
         ]
     ],
     'libFormatter' => [
