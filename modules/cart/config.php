@@ -54,6 +54,9 @@ return [
                 'user' => [
                     'type' => 'user'
                 ],
+                'identifier' => [
+                    'type' => 'text'
+                ],
                 'items' => [
                     'type' => 'number'
                 ],

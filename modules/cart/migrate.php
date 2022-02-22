@@ -15,10 +15,17 @@ return [
             'user' => [
                 'type' => 'INT',
                 'attrs' => [
-                    'unsigned' => TRUE,
-                    'null' => FALSE
+                    'unsigned' => TRUE
                 ],
                 'index' => 2000
+            ],
+            'identifier' => [
+                'type' => 'VARCHAR',
+                'length' => 100,
+                'attrs' => [
+                    'unique' => true
+                ],
+                'index' => 2500
             ],
             'items' => [
                 'comment' => 'item count',
